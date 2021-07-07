@@ -181,9 +181,9 @@ img {
 }
 .contact_item::before {
 	content: '';
-	width: 37px;
-	height: 37px;
-	background-image: url('/img/Phone.png');
+	width: 32px;
+	height: 32px;
+	background-image: url('../img/Phone.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -191,19 +191,19 @@ img {
 	margin-right: 15px;
 }
 .email::before {
-	background-image: url('/img/Email.png');
+	background-image: url('../img/Email.png');
 }
 .git::before {
-	background-image: url('/img/gti.png');
+	background-image: url('../img/gti.png');
 }
 .linkedin::before {
-	background-image: url('/img/linkedin.png');
+	background-image: url('../img/linkedin.png');
 }
 .twit::before {
-	background-image: url('/img/twit.png');
+	background-image: url('../img/twit.png');
 }
 .geo::before {
-	background-image: url('/img/Place.png');
+	background-image: url('../img/Place.png');
 }
 
 /* ---------------------------------------------- */
