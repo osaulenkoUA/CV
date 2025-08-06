@@ -52,15 +52,20 @@ li{
 
 .wrap-photo {
     width: 350px;
-    height: 700px;
-    position: absolute;
+    height: 350px; /* make it square */
+    border-radius: 50%; /* perfect circle */
+    overflow: hidden; /* crop excess image */
+    position: relative; /* optional, if not absolutely positioned */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* optional: nice visual touch */
     top: 30%;
     left: 5%;
-    border-radius: 20%;
-    background-image: url('../img/Photo2.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.wrap-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fill circle properly */
+    display: block;
 }
 
 .wrap-nameJob {
@@ -76,7 +81,7 @@ li{
     grid-template-columns: 470px 2px 1fr;
     margin: 0 auto;
     width: 1275px;
-    height: 1525px;
+    height: 1460px;
 }
 
 .left_block {
@@ -108,11 +113,10 @@ li{
 .tech_skills_title,
 .soft_skils_title,
 .language_title {
-    /*font-family: 'Roboto';*/
     text-transform: uppercase;
     color: #00aeef;
-    font-size: 28px;
-    margin: 15px 0;
+    font-size: 24px;
+    margin: 8px 0;
 }
 
 .language_item,
@@ -120,11 +124,15 @@ li{
 .tech_skills_item,
 .contact_item {
     color: #363436;
-    /*font-family: 'Roboto';*/
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.6;
 }
+.lower_text{
+    text-transform: lowercase;
+    font-size: 18px;
+    list-style: inside;
 
+}
 .linkedin a {
     font-size: 20px;
 }
@@ -135,7 +143,11 @@ li{
 .contact {
     margin-bottom: 30px;
 }
-
+.tech_skills_item.subtitle {
+    font-weight: bold;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
 .language::after,
 .soft_skils::after,
 .tech_skills::after {
@@ -147,7 +159,7 @@ li{
 }
 
 .contact_item {
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .contact_item::before {
@@ -185,7 +197,7 @@ li{
 /* ---------------------------------------------- */
 .line {
     width: 2px;
-    height: 1500px;
+    height: 1460px;
     background-color: #949698;
 }
 
@@ -296,7 +308,7 @@ a {
 }
 
 .last {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .item{
